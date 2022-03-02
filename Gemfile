@@ -26,6 +26,9 @@ gem 'devise'
 gem 'milia', '~>1.3'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'jquery-rails', '4.4.0'
+gem 'therubyracer'
+gem 'less-rails'
 
 
  # Use Redis adapter to run Action Cable in production
