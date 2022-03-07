@@ -12,21 +12,13 @@ class Project < ApplicationRecord
          errors.add(:base, "Free plans cannot have more than one project")
      end
     end
-    
-     end
-     
+
      def self.by_plan_and_tenant(tenant_id)
-
-tenant = Tenant.find(tenant_id)
-
-if tenant.plan == 'premium'
-
-tenant.projects
-
+       tenant = Tenant.find(tenant_id)
+       if tenant.plan == 'premium'
+       tenant.projects
 else
-
 tenant.projects.order(:id).limit(1)
-
 end
 end
 end
