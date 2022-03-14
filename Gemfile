@@ -30,6 +30,9 @@ gem 'bootstrap-datepicker-rails'
 gem 'jquery-rails', '4.4.0'
 gem 'therubyracer'
 gem 'less-rails'
+gem 'aws-sdk'
+gem 'stripe'
+
 
 
  # Use Redis adapter to run Action Cable in production
